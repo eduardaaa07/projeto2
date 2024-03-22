@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricurla</title>
+    <link rel="stylesheet" href="styles.css/matricula.css">
+</head>
+<body>
+    <head>
+        <h1>Matricurlar-se</h1>
+    </head>
+    
+    <form method="post" action="processar_matricula.php">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <label for="senha"> Confirmar Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <label for="curso">Curso:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="teclado">Teclado</option>
+            <option value="saxofone">Saxofone</option>
+            <option value="bateria">Bateria</option>
+            <option value="canto">Canto</option>
+            <option value="guitarra">Guitarra</option>
+        </select><br><br>
+        
+        
+    </form>
+    <div class="card">
+        <button>Confirmar matrícula</button>
+    </div>
+</body>
+</html>
